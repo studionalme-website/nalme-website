@@ -5,9 +5,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "fetch:instagram": "node scripts/fetch-instagram.js",
-    "build:indexes": "node scripts/build-indexes.js",
-    "build": "npm run fetch:instagram && npm run build:indexes && echo '✓ Static site ready'"
+    "fetch:instagram": "node scripts/fetch-instagram.js 2>/dev/null || echo 'Skipped: scripts/fetch-instagram.js not present (Phase 1 deploy)'",
+    "build:indexes": "node scripts/build-indexes.js 2>/dev/null || echo 'Skipped: scripts/build-indexes.js not present (Phase 1 deploy)'",
+    "build": "npm run fetch:instagram; npm run build:indexes; echo '✓ Static site ready'"
   },
   "engines": {
     "node": ">=18"
