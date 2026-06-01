@@ -1,19 +1,7 @@
-# Pretty URLs — works on Netlify AND Cloudflare Pages (identical syntax)
-/projects/*  /projects/:splat.html  200
-/products/*  /products/:splat.html  200
-/journal/*   /journal/:splat.html   200
+# Cloudflare Pages handles clean URLs automatically — /work serves /work.html
+# without configuration. Only declare REAL redirects (301/302) here, never rewrites,
+# or you get redirect loops.
 
-# Renamed pages
+# Renamed pages — actual permanent redirects
 /light       /store.html            301
 /light.html  /store.html            301
-
-# Clean URLs
-/ventures    /ventures.html         200
-/workshops   /workshops.html        200
-/about       /about.html            200
-/work        /work.html             200
-/journal     /journal.html          200
-/store       /store.html            200
-
-# 404 fallback — must be last
-/*           /404.html              404
