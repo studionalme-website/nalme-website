@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Studio Nalmé · Admin</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/favicon-red.svg">
+  <style>
+    /* Slight rebrand of the Decap login screen */
+    body { background: #fffaf0; }
+    [class^="LoginContainer"] { background: linear-gradient(180deg, #fffaf0 0%, #eae7e5 100%) !important; }
+    [class^="LogoImage"] { content: url('/assets/logos/logo-primary-red.svg'); max-width: 220px; }
+    [class*="GithubButton"] { background-color: #8e3432 !important; border-color: #8e3432 !important; }
+  </style>
+</head>
+<body>
+  <!-- Decap CMS app -->
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    // Use the GitHub backend with our self-hosted OAuth proxy on Cloudflare Pages.
+    // Decap auto-loads /admin/config.yml, but we override the base_url at runtime
+    // so the OAuth flow points at our Pages Function instead of Netlify's.
+    window.CMS_MANUAL_INIT = false;
+  </script>
+</body>
+</html>

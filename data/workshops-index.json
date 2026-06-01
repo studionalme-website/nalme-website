@@ -1,0 +1,104 @@
+{
+  "count": 9,
+  "items": [
+    {
+      "status": "upcoming",
+      "date_display": "28 Sep · 2026",
+      "sort_date": "2026-09-28T09:00:00Z",
+      "name": "A weekend with permaculture — return",
+      "meta": "2 days · Studio land, Bengaluru · 12 seats",
+      "description": "Post-monsoon edition of our permaculture intro. Soil, slope, water, observation. Notes from April linked in.",
+      "rsvp_url": "/index.html#contact",
+      "image": "",
+      "_file": "permaculture-weekend-return.json"
+    },
+    {
+      "status": "upcoming",
+      "date_display": "19 Jul · 2026",
+      "sort_date": "2026-07-19T09:00:00Z",
+      "name": "Natural plasters — lime, mud, dung",
+      "meta": "1 day · RVCA Bengaluru · 14 seats",
+      "description": "Hosted in collaboration with RV College of Architecture. Mixing, layering, finishing — and how to read a wall before plastering it.",
+      "rsvp_url": "/index.html#contact",
+      "image": "",
+      "_file": "natural-plasters.json"
+    },
+    {
+      "status": "upcoming",
+      "date_display": "07 Jun · 2026",
+      "sort_date": "2026-06-07T09:00:00Z",
+      "name": "Build your own table — carpentry weekend",
+      "meta": "2 days · Studio Bengaluru · 8 seats",
+      "description": "A guided weekend of joinery and finishing. Each participant leaves with a small low table they made themselves. All tools provided.",
+      "rsvp_url": "/index.html#contact",
+      "image": "",
+      "_file": "build-your-own-table.json"
+    },
+    {
+      "status": "past",
+      "date_display": "2025",
+      "sort_date": "2025-01-01T00:00:00Z",
+      "name": "Build Your Own Table — carpentry",
+      "meta": "Studio Bengaluru",
+      "description": "",
+      "rsvp_url": "",
+      "image": "",
+      "_file": "build-table-2025.json"
+    },
+    {
+      "status": "past",
+      "date_display": "2024",
+      "sort_date": "2024-01-01T00:00:00Z",
+      "name": "Hands-on Clay for Children",
+      "meta": "Studio Bengaluru",
+      "description": "",
+      "rsvp_url": "",
+      "image": "",
+      "_file": "hands-on-clay-children-2024.json"
+    },
+    {
+      "status": "past",
+      "date_display": "2023",
+      "sort_date": "2023-06-01T00:00:00Z",
+      "name": "Natural Plasters Workshop",
+      "meta": "RV College of Architecture, Bengaluru",
+      "description": "",
+      "rsvp_url": "",
+      "image": "",
+      "_file": "natural-plasters-2023.json"
+    },
+    {
+      "status": "past",
+      "date_display": "2023",
+      "sort_date": "2023-01-01T00:00:00Z",
+      "name": "Vaults & Jack Arches",
+      "meta": "RV College of Architecture, Bengaluru",
+      "description": "",
+      "rsvp_url": "",
+      "image": "",
+      "_file": "vaults-jack-arches-2023.json"
+    },
+    {
+      "status": "past",
+      "date_display": "2022",
+      "sort_date": "2022-01-01T00:00:00Z",
+      "name": "Soil Stories — Mud Building",
+      "meta": "Bangalore Creative Circus",
+      "description": "",
+      "rsvp_url": "",
+      "image": "",
+      "_file": "soil-stories-2022.json"
+    },
+    {
+      "status": "past",
+      "date_display": "2021",
+      "sort_date": "2021-01-01T00:00:00Z",
+      "name": "Introduction to Earth Architecture",
+      "meta": "Wadiyar Centre for Architecture, Mysuru",
+      "description": "",
+      "rsvp_url": "",
+      "image": "",
+      "_file": "intro-earth-architecture-2021.json"
+    }
+  ]
+}

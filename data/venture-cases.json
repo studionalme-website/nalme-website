@@ -1,0 +1,22 @@
+{
+  "cases": [
+    {
+      "tag": "Hospitality",
+      "name": "A stay that the land hosts.",
+      "line": "A small hotel or retreat of twelve rooms or fewer, sitting inside a food forest and water-harvested landscape. Guests pay for the place. The place feeds itself.",
+      "image": "/assets/images/uploads/venture-hospitality.jpg"
+    },
+    {
+      "tag": "Education",
+      "name": "A school that grows what it teaches.",
+      "line": "A learning centre woven into a working farm. Children learn from the soil and the seasons. Tuition and harvest both contribute to the running of the place.",
+      "image": "/assets/images/uploads/venture-education.jpg"
+    },
+    {
+      "tag": "Wellness",
+      "name": "A retreat in a food forest.",
+      "line": "Yoga, ayurveda, or healing programmes set in a regenerating landscape. Retreat fees, kitchen produce, and seasonal programmes all earning from the same acres.",
+      "image": "/assets/images/uploads/venture-wellness.jpg"
+    }
+  ]
+}

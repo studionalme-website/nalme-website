@@ -1,0 +1,191 @@
+# Studio Nalmé — Decap CMS configuration
+# Edits commit straight to the GitHub repo. Cloudflare Pages auto-rebuilds on push.
+
+backend:
+  name: github
+  repo: studionalme/website          # ← replace once repo is created on GitHub
+  branch: main
+  base_url: https://studionalme.com  # OAuth proxy lives here
+  auth_endpoint: oauth/auth
+
+# Media — uploads land in /assets/images/uploads/, public via /assets/images/uploads/...
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+# Display name in the editor sidebar
+site_url: https://studionalme.com
+display_url: https://studionalme.com
+logo_url: /assets/logos/logo-primary-red.svg
+
+# Optional — show a "View live" button after publishing
+publish_mode: simple
+
+# ─────────────────────────────────────────────────────────────
+# COLLECTIONS
+# ─────────────────────────────────────────────────────────────
+
+collections:
+
+  # ─── 1. SITE CONFIG ────────────────────────────────────────
+  - name: "site"
+    label: "Site Settings"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - file: "data/site.json"
+        label: "Studio info & contact"
+        name: "studio"
+        fields:
+          - { label: "WhatsApp number (international format, no +)", name: "whatsapp_number", widget: "string", hint: "e.g. 919876543210" }
+          - { label: "Phone display (formatted)", name: "phone_display", widget: "string", hint: "e.g. +91 98 7654 3210" }
+          - { label: "General email", name: "email_general", widget: "string", default: "hello@studionalme.com" }
+          - { label: "Ventures enquiry email", name: "email_ventures", widget: "string", default: "ventures@studionalme.com" }
+          - { label: "Postal address (multiline)", name: "address", widget: "text" }
+          - { label: "Instagram handle (no @)", name: "instagram_handle", widget: "string", default: "studio_nalme" }
+          - { label: "LinkedIn URL", name: "linkedin_url", widget: "string", required: false }
+
+  # ─── 2. PRODUCTS (Store) ───────────────────────────────────
+  - name: "products"
+    label: "Store Products"
+    folder: "data/products"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: "name"
+    summary: "{{name}} · {{category}} · {{price_display}}"
+    fields:
+      - { label: "Category", name: "category", widget: "select", options: ["Light", "Cloth", "Tiles", "Wood", "Cane"] }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Slug (URL ID, no spaces)", name: "id", widget: "string", hint: "Used internally for the Razorpay checkout. e.g. kuri-pendant" }
+      - { label: "Material descriptor", name: "material", widget: "string", hint: "e.g. Cane · Natural fibre" }
+      - { label: "Price (in paise — multiply rupees by 100)", name: "price_paise", widget: "number", hint: "₹14,800 = 1480000" }
+      - { label: "Price display", name: "price_display", widget: "string", hint: "e.g. ₹14,800 or From ₹18,000" }
+      - { label: "Price subtitle", name: "price_subtitle", widget: "string", required: false, hint: "e.g. three sizes · single bulb" }
+      - { label: "Lead time", name: "lead_time", widget: "string", hint: "e.g. Ships in 7–10 days, Made in 4 weeks, Ready to dispatch" }
+      - { label: "Poetic note (italic line under description)", name: "note", widget: "string", required: false }
+      - { label: "Image", name: "image", widget: "image", hint: "Square portrait, ~1000×1250" }
+      - { label: "Status", name: "status", widget: "select", options: ["ready-to-ship", "by-commission", "by-inventory", "quoted-to-brief"], hint: "Affects the 'By commission' ribbon and CTA label" }
+      - { label: "Available (show on site)", name: "available", widget: "boolean", default: true }
+
+  # ─── 3. WORKSHOPS ──────────────────────────────────────────
+  - name: "workshops"
+    label: "Workshops"
+    folder: "data/workshops"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: "name"
+    summary: "{{date_display}} · {{name}} · {{status}}"
+    fields:
+      - { label: "Status", name: "status", widget: "select", options: ["upcoming", "past"], default: "upcoming" }
+      - { label: "Date display", name: "date_display", widget: "string", hint: "e.g. 07 Jun · 2026" }
+      - { label: "Sort date (used for ordering)", name: "sort_date", widget: "datetime", hint: "Actual date — used to order workshops chronologically" }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Meta line", name: "meta", widget: "string", hint: "e.g. 2 days · Studio Bengaluru · 8 seats" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "RSVP URL", name: "rsvp_url", widget: "string", default: "/index.html#contact" }
+      - { label: "Hero image", name: "image", widget: "image", required: false }
+
+  # ─── 4. FEATURED INSTAGRAM (the 4 curated cards) ──────────
+  - name: "featured_ig"
+    label: "Featured Instagram Posts"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - file: "data/ig-curated.json"
+        label: "Featured posts (4 cards on About + 5 thumbs on homepage strip)"
+        name: "featured"
+        fields:
+          - label: "Posts"
+            name: "posts"
+            widget: "list"
+            max: 6
+            fields:
+              - { label: "Instagram URL", name: "url", widget: "string", hint: "Full URL — https://www.instagram.com/p/..." }
+              - { label: "Type", name: "type", widget: "select", options: ["reel", "post", "carousel"] }
+              - { label: "Caption (in studio voice, short)", name: "caption", widget: "string" }
+              - { label: "Thumbnail (square crop from the post)", name: "image", widget: "image" }
+
+  # ─── 5. PRESS & AFFILIATIONS ───────────────────────────────
+  - name: "press"
+    label: "Press & Affiliations"
+    folder: "data/press"
+    create: true
+    delete: true
+    identifier_field: "title"
+    summary: "{{type}} · {{title}}"
+    fields:
+      - { label: "Type", name: "type", widget: "select", options: ["mentorship", "training", "teaching", "press-feature", "talk", "interview"] }
+      - { label: "Tag (small label above title)", name: "tag", widget: "string", hint: "e.g. Mentorship, Training, Press Feature" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "External URL", name: "url", widget: "string", required: false }
+      - { label: "Date", name: "date", widget: "datetime", required: false }
+      - { label: "Display on About page", name: "show", widget: "boolean", default: true }
+
+  # ─── 6. VENTURE CASES (the 3 hero cards on Ventures) ──────
+  - name: "venture_cases"
+    label: "Venture Cases"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - file: "data/venture-cases.json"
+        label: "The three case categories on Ventures page"
+        name: "cases"
+        fields:
+          - label: "Cases"
+            name: "cases"
+            widget: "list"
+            max: 4
+            fields:
+              - { label: "Tag", name: "tag", widget: "string", hint: "e.g. Hospitality, Education, Wellness" }
+              - { label: "Title", name: "name", widget: "string" }
+              - { label: "Description", name: "line", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+
+  # ─── 7. HERO VIDEO + MANIFESTO VIDEO ──────────────────────
+  - name: "videos"
+    label: "Atmospheric Videos"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - file: "data/videos.json"
+        label: "Hero & Manifesto loop videos"
+        name: "videos"
+        fields:
+          - label: "Hero loop (homepage)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Enabled", name: "enabled", widget: "boolean", default: true }
+              - { label: "MP4 file", name: "mp4", widget: "file", required: false, hint: "Drop in a 6–8 sec, ≤800KB MP4" }
+              - { label: "WebM file", name: "webm", widget: "file", required: false, hint: "Smaller alternative for modern browsers" }
+              - { label: "Poster image", name: "poster", widget: "image", required: false }
+          - label: "Manifesto loop"
+            name: "manifesto"
+            widget: "object"
+            fields:
+              - { label: "Enabled", name: "enabled", widget: "boolean", default: true }
+              - { label: "MP4 file", name: "mp4", widget: "file", required: false }
+              - { label: "WebM file", name: "webm", widget: "file", required: false }
+
+  # ─── 8. STORE TRUST STRIP ────────────────────────────────
+  - name: "trust_strip"
+    label: "Store Trust Strip"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - file: "data/trust-strip.json"
+        label: "The four chips above the Store"
+        name: "items"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            max: 6
+            field: { label: "Text", name: "text", widget: "string" }

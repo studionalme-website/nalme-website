@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "enabled": true,
+    "mp4": "/assets/video/hero-loop.mp4",
+    "webm": "/assets/video/hero-loop.webm",
+    "poster": "/assets/video/hero-poster.jpg"
+  },
+  "manifesto": {
+    "enabled": true,
+    "mp4": "/assets/video/manifesto-loop.mp4",
+    "webm": "/assets/video/manifesto-loop.webm"
+  }
+}
