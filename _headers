@@ -1,0 +1,27 @@
+# Cache headers — works on Netlify AND Cloudflare Pages (identical syntax)
+
+# Fonts — cache aggressively
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Logos and brand SVGs — cache aggressively
+/assets/logos/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# CSS and JS — cache for a week (versioned via build later)
+/assets/styles.css
+  Cache-Control: public, max-age=604800
+/assets/scripts.js
+  Cache-Control: public, max-age=604800
+
+# All HTML — short cache, must revalidate
+/*.html
+  Cache-Control: public, max-age=300, must-revalidate
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Security headers across the site
+/*
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Content-Type-Options: nosniff

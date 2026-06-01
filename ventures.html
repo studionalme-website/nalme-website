@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ventures — Land into a Living, Earning Ecosystem · Studio Nalmé</title>
+<meta name="description" content="We turn whole parcels of land into living, productive ecosystems through permaculture — then build the cafés, retreats, schools and stays that let the place pay for itself. Bengaluru.">
+<link rel="icon" type="image/svg+xml" href="assets/logos/favicon-cream.svg" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="assets/logos/favicon-red.svg">
+<link rel="preload" href="assets/logos/logo-primary-red.svg" as="image" type="image/svg+xml">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Land into a living, earning ecosystem — Studio Nalmé Ventures">
+<meta property="og:description" content="Permaculture-led site design and architecture for landowners. Cafés, retreats, schools and stays built on land that pays for itself.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600&q=85">
+<meta property="og:url" content="https://studionalme.com/ventures.html">
+<meta property="og:site_name" content="Studio Nalmé">
+<meta property="og:locale" content="en_IN">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ventures — Studio Nalmé">
+<meta name="twitter:description" content="Land into ecosystem. Ecosystem into a place that earns.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600&q=85">
+
+<link rel="me" href="https://www.instagram.com/studio_nalme/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://studionalme.com/ventures.html#service",
+      "name": "Land Development & Architectural Joint Ventures",
+      "provider": {
+        "@type": "ArchitectureStudio",
+        "name": "Studio Nalmé",
+        "url": "https://studionalme.com",
+        "logo": "https://studionalme.com/assets/logos/logo-primary-red.svg",
+        "sameAs": ["https://www.instagram.com/studio_nalme/"]
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "serviceType": ["Permaculture Site Design","Land Regeneration","Hospitality Design","School Design","Wellness Retreat Design","Architectural Joint Ventures"],
+      "description": "Permaculture-led conversion of land into productive ecosystems, paired with architecture (cafés, retreats, schools, stays) that generates ongoing revenue from the place. Partnership and joint-venture structures available."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"What does it mean to turn land into a productive ecosystem?","acceptedAnswer":{"@type":"Answer","text":"We use permaculture principles — water harvesting, soil-building, contour planting, food forests, microclimates — to make the land itself productive: shade, soil, food, fodder, fibre, and a steady source of yield. Architecture is built into that system, not on top of it. The result is a place that quietly earns through what it produces and what it hosts."}},
+        {"@type":"Question","name":"How does the venture earn revenue?","acceptedAnswer":{"@type":"Answer","text":"Through whatever the place naturally supports. A small hotel or retreat hosts paying guests. A café sells food grown on site. A school charges tuition and runs farm programmes. A wellness retreat sells stays and produce. The ecosystem reduces the cost base; the architecture generates the income."}},
+        {"@type":"Question","name":"What kind of land projects do you take on?","acceptedAnswer":{"@type":"Answer","text":"Anything between roughly half an acre and ten acres. Boutique hospitality (small hotels, retreats, cafés), small schools or learning centres, wellness and yoga spaces, working farms with a public face. We don't take on residential subdivisions or commercial high-rises — that's not what we do well."}},
+        {"@type":"Question","name":"Where do you work geographically?","acceptedAnswer":{"@type":"Answer","text":"Primarily Karnataka and South India, with some projects in Maharashtra and Tamil Nadu. We can travel further for the right partnership."}},
+        {"@type":"Question","name":"How does a joint venture structure work?","acceptedAnswer":{"@type":"Answer","text":"It's tailored each time. Sometimes we take a reduced design fee in exchange for equity. Sometimes we co-invest the design phase with the Matash Enterprise Lab. Sometimes we operate after opening. We're transparent about what we can put in and what we'd want in return. The first conversation is free."}},
+        {"@type":"Question","name":"How long before the place starts to earn?","acceptedAnswer":{"@type":"Answer","text":"Design and approvals take 3–6 months. Construction 12–20 months. Once open, hospitality and café ventures begin earning immediately. Food forests and orchards take 2–3 seasons to yield meaningfully. Most ventures hit operational break-even between years 2 and 4 depending on scale and category."}},
+        {"@type":"Question","name":"What if my land has no water, or poor soil?","acceptedAnswer":{"@type":"Answer","text":"That's where permaculture is the most useful. We design water harvesting and soil-building first — swales, contour planting, mulch, native species — and the rest of the venture follows. A degraded site is often the most rewarding to work with."}},
+        {"@type":"Question","name":"Do I need to have a clear idea of what I want to build?","acceptedAnswer":{"@type":"Answer","text":"No. Many of our best ventures started with a landowner who only knew they wanted the land to do something. We help shape what the land can support — ecologically and financially — including the revenue model."}}
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<style data-page="ventures">
+/* ─── BRAND TYPEFACES + base (inlined for bulletproof deployment) ─── */
+@font-face{font-family:'Friend';src:url('assets/fonts/Friend-Light.otf') format('opentype');font-weight:300;font-display:swap}
+@font-face{font-family:'Friend';src:url('assets/fonts/Friend-Regular.otf') format('opentype');font-weight:400;font-display:swap}
+@font-face{font-family:'Friend';src:url('assets/fonts/Friend-Bold.otf') format('opentype');font-weight:700;font-display:swap}
+@font-face{font-family:'Friend';src:url('assets/fonts/Friend-Italic.otf') format('opentype');font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:'Kumbh Sans';src:url('assets/fonts/KumbhSans.ttf') format('truetype');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Inter';src:url('assets/fonts/Inter.ttf') format('truetype');font-weight:100 900;font-display:swap}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+:root{
+  --ivory:#fffaf0;--brick:#8e3432;--sage:#6b705c;--taupe:#957465;--charcoal:#665146;
+  --slate-sage:#8faaa5;--moss:#515b45;--ink:#3d3a36;--bone:#eae7e5;--linen:#d9d2c5;--cream:#eedbbb;
+  --ease-out:cubic-bezier(.25,.46,.45,.94);
+  --ease-curtain:cubic-bezier(.77,0,.175,1);
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{background:var(--ivory);color:var(--charcoal);font-family:'Inter','Helvetica Neue',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden;cursor:none;-webkit-font-smoothing:antialiased}
+
+/* ─── Hero — dramatic, single direct CTA ─── */
+.v-hero{position:relative;min-height:92vh;display:flex;align-items:center;padding:9rem 3rem 6rem;background:var(--ink);overflow:hidden}
+.v-hero-img{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=2000&q=85') center/cover no-repeat;filter:saturate(.78) brightness(.45)}
+.v-hero-veil{position:absolute;inset:0;background:linear-gradient(120deg,rgba(45,30,22,.65) 0%,rgba(45,30,22,.35) 60%,rgba(45,30,22,.55) 100%)}
+.v-hero-content{position:relative;z-index:5;max-width:1320px;margin:0 auto;width:100%;display:grid;grid-template-columns:7fr 5fr;gap:5rem;align-items:end}
+.v-hero-eyebrow{font-family:'Kumbh Sans',sans-serif;font-weight:500;font-size:.66rem;letter-spacing:.5em;text-transform:uppercase;color:var(--cream);display:flex;align-items:center;gap:1.2rem;margin-bottom:2.2rem;opacity:.9}
+.v-hero-eyebrow::before{content:'';width:42px;height:1px;background:var(--cream)}
+.v-hero h1{font-family:'Kumbh Sans',sans-serif;font-weight:200;font-size:clamp(2.4rem,5.8vw,4.6rem);line-height:1.05;letter-spacing:-.025em;color:var(--ivory);margin-bottom:2rem;max-width:16ch}
+.v-hero h1 b{font-family:'Friend','Kumbh Sans',sans-serif;font-weight:700;color:var(--cream)}
+.v-hero-sub{font-family:'Kumbh Sans',sans-serif;font-weight:300;font-size:clamp(1.1rem,1.6vw,1.35rem);line-height:1.55;color:rgba(255,250,240,.86);max-width:48ch;margin-bottom:2.6rem}
+.v-hero-cta{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.v-hero-side{padding:2.4rem;background:rgba(45,30,22,.5);border:1px solid rgba(238,219,187,.2);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);max-width:420px;justify-self:end}
+.v-hero-side h4{font-family:'Kumbh Sans',sans-serif;font-weight:500;font-size:.6rem;letter-spacing:.4em;text-transform:uppercase;color:var(--cream);margin-bottom:1rem;display:flex;align-items:center;gap:.6rem}
+.v-hero-side h4::before{content:'';width:18px;height:1px;background:var(--cream)}
+.v-hero-side p{font-family:'Friend',sans-serif;font-style:italic;font-size:1.15rem;line-height:1.5;color:var(--ivory);margin-bottom:1.4rem}
+.v-hero-side ul{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+.v-hero-side li{font-family:'Inter',sans-serif;font-weight:300;font-size:.95rem;color:rgba(255,250,240,.84);padding-left:1.4rem;position:relative}
+.v-hero-side li::before{content:'';position:absolute;left:0;top:.6rem;width:8px;height:1px;background:var(--cream)}
+
+/* Button styles (compact, since not in styles.css yet for venture-specific tweaks) */
+.btn{display:inline-flex;align-items:center;gap:.7rem;padding:1rem 1.8rem;font-family:'Kumbh Sans',sans-serif;font-weight:500;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;text-decoration:none;border:1px solid;position:relative;overflow:hidden;transition:color .5s var(--ease-curtain),border-color .4s ease;min-height:48px;cursor:none}
+.btn-primary{color:var(--ivory);background:var(--brick);border-color:var(--brick);z-index:1}
+.btn-primary::before{content:'';position:absolute;inset:0;background:var(--ivory);transform:translateX(-101%);transition:transform .55s var(--ease-curtain);z-index:-1}
+.btn-primary:hover::before{transform:translateX(0)}
+.btn-primary:hover{color:var(--brick)}
+.btn-ghost-cream{color:var(--cream);background:transparent;border-color:rgba(238,219,187,.5)}
+.btn-ghost-cream:hover{border-color:var(--cream);color:var(--ivory)}
+.btn-ghost-cream::after{content:'→';font-family:'Inter';font-size:.95rem;letter-spacing:0;transition:transform .4s ease}
+.btn-ghost-cream:hover::after{transform:translateX(4px)}
+
+/* ─── Section foundations ─── */
+section{padding:7rem 3rem;position:relative}
+.container{max-width:1320px;margin:0 auto}
+.eyebrow{font-family:'Kumbh Sans',sans-serif;font-weight:500;font-size:.62rem;letter-spacing:.5em;text-transform:uppercase;color:var(--sage);display:flex;align-items:center;gap:1rem;margin-bottom:1.4rem}
+.eyebrow::before{content:'';width:32px;height:1px;background:var(--sage)}
+.h2{font-family:'Kumbh Sans',sans-serif;font-weight:200;font-size:clamp(2rem,4.4vw,3.6rem);line-height:1.08;letter-spacing:-.02em;color:var(--ink)}
+.h2 b{font-family:'Friend','Kumbh Sans',sans-serif;font-weight:700;color:var(--brick)}
+
+/* ─── Use cases (rich imagery) ─── */
+#cases{background:var(--ivory);border-top:1px solid rgba(102,81,70,.08)}
+.cases-head{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:end;margin-bottom:4rem}
+.cases-head p{font-size:1.05rem;line-height:1.85;color:var(--charcoal);max-width:46ch}
+.cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.case{background:var(--ink);color:var(--ivory);overflow:hidden;position:relative;aspect-ratio:3/4;display:flex;flex-direction:column;justify-content:flex-end;text-decoration:none}
+.case-img{position:absolute;inset:0;background-position:center;background-size:cover;filter:saturate(.85) brightness(.62);transition:transform 1.2s var(--ease-out),filter .5s ease}
+.case:hover .case-img{transform:scale(1.04);filter:saturate(1) brightness(.7)}
+.case-veil{position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(45,30,22,.85) 100%);pointer-events:none}
+.case-body{position:relative;z-index:2;padding:2.2rem 1.8rem}
+.case-tag{font-family:'Kumbh Sans',sans-serif;font-weight:500;font-size:.6rem;letter-spacing:.42em;text-transform:uppercase;color:var(--cream);margin-bottom:.7rem;opacity:.85}
+.case-name{font-family:'Friend','Kumbh Sans',sans-serif;font-weight:700;font-size:1.7rem;line-height:1.15;color:var(--ivory);margin-bottom:.7rem}
+.case-line{font-family:'Inter',sans-serif;font-weight:300;font-size:.95rem;line-height:1.6;color:rgba(255,250,240,.85)}
+
+/* ─── Process (4 steps) ─── */
+#process{background:var(--bone);padding:8rem 3rem;border-top:1px solid rgba(102,81,70,.08)}
+.process-head{margin-bottom:4rem;max-width:46ch}
+.process-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.6rem;position:relative}
+.process-step{position:relative;padding:2rem 0;border-top:1px solid var(--linen)}
+.step-num{font-family:'Friend',sans-serif;font-style:italic;font-weight:400;font-size:3.2rem;color:var(--brick);line-height:1;margin-bottom:1rem;display:block}
+.step-name{font-family:'Kumbh Sans',sans-serif;font-weight:500;font-size:.7rem;letter-spacing:.34em;text-transform:uppercase;color:var(--ink);margin-bottom:.8rem}
+.step-desc{font-size:.95rem;line-height:1.75;color:var(--charcoal)}
+
+/* ─── What we bring ─── */
+#bring{background:var(--ivory);padding:8rem 3rem;border-top:1px solid rgba(102,81,70,.08)}
+.bring-grid{display:grid;grid-template-columns:5fr 7fr;gap:5rem;align-items:start}
+.bring-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:2rem 3rem}
+.bring-list li{padding:1.6rem 0;border-top:1px solid var(--linen)}
+.bring-list li:first-child,.bring-list li:nth-child(2){padding-top:0;border-top:none}
+.bring-list h4{font-family:'Kumbh Sans',sans-serif;font-weight:500;font-size:.66rem;letter-spacing:.36em;text-transform:uppercase;color:var(--brick);margin-bottom:.7rem}
+.bring-list p{font-size:.95rem;line-height:1.7;color:var(--charcoal);margin:0}
+
+/* ─── Quote — social proof slot ─── */
+#proof{background:var(--brick);color:var(--ivory);padding:7rem 3rem;text-align:center;position:relative;overflow:hidden}
+#proof::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(255,250,240,.03) 3px,rgba(255,250,240,.03) 4px)}
+.proof-content{position:relative;z-index:1;max-width:760px;margin:0 auto}
+.proof-content blockquote{font-family:'Friend','Kumbh Sans',sans-serif;font-weight:300;font-style:italic;font-size:clamp(1.5rem,2.6vw,2.2rem);line-height:1.4;color:var(--ivory);margin-bottom:2rem}
+.proof-content cite{display:block;font-family:'Kumbh Sans',sans-serif;font-style:normal;font-weight:500;font-size:.66rem;letter-spacing:.4em;text-transform:uppercase;color:var(--cream)}
+
+/* ─── Form (the lead-gen point) ─── */
+#begin{background:var(--bone);padding:8rem 3rem;border-top:1px solid rgba(102,81,70,.08)}
+.begin-grid{display:grid;grid-template-columns:5fr 7fr;gap:5rem;max-width:1320px;margin:0 auto;align-items:start}
+.begin-l h2{margin-bottom:2rem}
+.begin-l p{font-size:1.05rem;line-height:1.85;color:var(--charcoal);margin-bottom:1.4rem;max-width:42ch}
+.begin-l .response{margin-top:2rem;padding:1.4rem;background:var(--ivory);border-left:3px solid var(--brick);font-family:'Friend',sans-serif;font-style:italic;font-size:1rem;line-height:1.55;color:var(--ink)}
+.v-form{background:var(--ivory);padding:3rem;border:1px solid rgba(102,81,70,.12);display:flex;flex-direction:column;gap:1.8rem}
+.v-form h3{font-family:'Kumbh Sans',sans-serif;font-weight:500;font-size:.7rem;letter-spacing:.36em;text-transform:uppercase;color:var(--brick);margin-bottom:.3rem}
+.v-form-row{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem}
+.field{display:flex;flex-direction:column;gap:.5rem}
+.field label{font-family:'Kumbh Sans',sans-serif;font-weight:500;font-size:.58rem;letter-spacing:.32em;text-transform:uppercase;color:var(--taupe)}
+.field label .req{color:var(--brick);margin-left:.2rem}
+.field input,.field textarea,.field select{background:transparent;border:none;border-bottom:1px solid rgba(102,81,70,.25);padding:.75rem 0;font-family:'Inter',sans-serif;font-weight:300;font-size:1rem;color:var(--ink);outline:none;transition:border-color .3s ease;width:100%;font-family:'Inter',sans-serif}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--brick)}
+.field input::placeholder,.field textarea::placeholder{color:rgba(102,81,70,.4);font-style:italic}
+.field textarea{resize:vertical;min-height:90px}
+.field-checks{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.4rem}
+.check-chip{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1rem;border:1px solid rgba(102,81,70,.25);font-family:'Kumbh Sans',sans-serif;font-weight:500;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);cursor:none;transition:all .25s ease;user-select:none}
+.check-chip input{display:none}
+.check-chip.checked,.check-chip:hover{background:var(--brick);color:var(--ivory);border-color:var(--brick)}
+.v-form .btn{align-self:flex-start;margin-top:1rem}
+.v-form.sent{position:relative;min-height:200px;display:flex;align-items:center;justify-content:center;text-align:center}
+.v-form.sent > *{display:none}
+.v-form.sent::after{content:'Thank you. We respond within a week — keep an eye on the email or number you left.';display:block;font-family:'Friend',sans-serif;font-style:italic;font-size:1.2rem;line-height:1.5;color:var(--brick);max-width:36ch;margin:0 auto}
+
+/* ─── SEASONS — when the work can happen ─── */
+#seasons{background:var(--bone);padding:8rem 3rem;border-top:1px solid rgba(102,81,70,.08)}
+.seasons-container{max-width:1100px;margin:0 auto}
+.seasons-head{display:grid;grid-template-columns:5fr 7fr;gap:5rem;margin-bottom:3.6rem;align-items:end}
+.seasons-head .h2{margin:0}
+.seasons-head p{font-size:1rem;line-height:1.85;color:var(--charcoal);max-width:46ch;margin:0}
+.seasons-table{background:var(--ivory);border:1px solid var(--linen)}
+.seasons-row{display:grid;grid-template-columns:7fr 5fr;gap:2rem;padding:1.5rem 2rem;border-bottom:1px solid var(--linen);align-items:baseline;transition:background .35s ease}
+.seasons-row:last-child{border-bottom:none}
+.seasons-row:hover{background:var(--bone)}
+.seasons-row.head{background:transparent;border-bottom:1px solid rgba(102,81,70,.25)}
+.seasons-row.head .seasons-key,.seasons-row.head .seasons-val{font-family:'Kumbh Sans',sans-serif;font-weight:500;font-size:.6rem;letter-spacing:.34em;text-transform:uppercase;color:var(--sage)}
+.seasons-key{font-family:'Kumbh Sans',sans-serif;font-weight:400;font-size:1rem;color:var(--ink);line-height:1.4}
+.seasons-key small{display:block;font-family:'Friend',sans-serif;font-style:italic;font-weight:400;font-size:.88rem;color:var(--taupe);margin-top:.3rem}
+.seasons-val{font-family:'Friend',sans-serif;font-style:italic;font-weight:400;font-size:1.02rem;line-height:1.4;color:var(--brick)}
+.seasons-val em{font-style:normal;color:var(--ink);font-family:'Kumbh Sans',sans-serif;font-weight:500;font-size:.85em}
+
+/* Planning ahead — paired callout */
+.planning{margin-top:4rem;display:grid;grid-template-columns:5fr 7fr;gap:5rem;padding-top:3.2rem;border-top:1px solid rgba(102,81,70,.18)}
+.planning-l .eyebrow{margin-bottom:1.4rem}
+.planning-l h3{font-family:'Kumbh Sans',sans-serif;font-weight:200;font-size:clamp(1.6rem,2.6vw,2.2rem);line-height:1.2;letter-spacing:-.01em;color:var(--ink);max-width:14ch}
+.planning-l h3 em{font-style:normal;color:var(--brick);font-family:'Friend',sans-serif;font-weight:400}
+.planning-r p{font-size:1rem;line-height:1.9;color:var(--charcoal);margin-bottom:1.4rem;max-width:54ch}
+.planning-r p:last-child{margin-bottom:0}
+.planning-r p strong{font-weight:500;color:var(--ink)}
+.planning-r p em{font-style:normal;color:var(--brick);font-family:'Friend',sans-serif;font-weight:500;letter-spacing:0}
+
+@media (max-width:900px){
+  #seasons{padding:5rem 1.4rem}
+  .seasons-head{grid-template-columns:1fr;gap:1.6rem;margin-bottom:2.4rem}
+  .seasons-row{grid-template-columns:1fr;gap:.4rem;padding:1.3rem 1.4rem}
+  .planning{grid-template-columns:1fr;gap:1.6rem;margin-top:3rem;padding-top:2.4rem}
+}
+
+/* ─── FAQ ─── */
+#faq{background:var(--ivory);padding:8rem 3rem;border-top:1px solid rgba(102,81,70,.08)}
+.faq-head{margin-bottom:4rem;max-width:46ch}
+.faq-list{display:flex;flex-direction:column;border-top:1px solid var(--linen);max-width:880px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--linen)}
+.faq-q{width:100%;background:transparent;border:none;padding:1.8rem 0;text-align:left;cursor:none;font-family:'Kumbh Sans',sans-serif;font-weight:400;font-size:1.1rem;line-height:1.4;color:var(--ink);letter-spacing:-.01em;display:flex;justify-content:space-between;align-items:center;gap:2rem;transition:color .3s ease}
+.faq-q:hover{color:var(--brick)}
+.faq-q::after{content:'+';font-family:'Friend',sans-serif;font-weight:400;color:var(--brick);font-size:1.8rem;line-height:1;transition:transform .35s var(--ease-out);flex-shrink:0}
+.faq-item.open .faq-q::after{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .45s var(--ease-out),padding .35s ease;font-size:1rem;line-height:1.85;color:var(--charcoal)}
+.faq-item.open .faq-a{max-height:400px;padding:0 0 1.8rem}
+.faq-a p{max-width:58ch}
+
+/* ─── Closing ─── */
+#closing{background:var(--ink);color:var(--ivory);padding:7rem 3rem;text-align:center}
+.closing-content{max-width:560px;margin:0 auto}
+#closing h3{font-family:'Friend','Kumbh Sans',sans-serif;font-weight:700;font-size:clamp(1.8rem,3.5vw,2.8rem);line-height:1.2;color:var(--ivory);margin-bottom:1.4rem}
+#closing p{font-family:'Kumbh Sans',sans-serif;font-weight:300;font-size:1.1rem;line-height:1.55;color:rgba(255,250,240,.85);margin-bottom:2rem}
+#closing .ig{display:block;margin-top:1.4rem;font-family:'Friend',sans-serif;font-style:italic;font-size:1rem;color:var(--cream)}
+
+/* ─── Cursor ─── */
+.cursor{position:fixed;width:10px;height:10px;background:var(--brick);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform .15s ease,width .3s ease,height .3s ease;mix-blend-mode:multiply;left:-100px;top:-100px}
+.cursor-ring{position:fixed;width:36px;height:36px;border:1px solid var(--charcoal);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .3s ease,height .3s ease,opacity .3s ease;opacity:.4;left:-100px;top:-100px}
+body:has(a:hover) .cursor,.cursor.hover{width:22px;height:22px}
+body:has(a:hover) .cursor-ring,.cursor-ring.hover{width:64px;height:64px;opacity:.25}
+@media (hover:none){body{cursor:auto}.cursor,.cursor-ring{display:none}}
+
+/* ─── Nav (same as site) ─── */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1.5rem 3rem;display:flex;justify-content:space-between;align-items:center;transition:padding .5s ease,background .5s ease;background:rgba(45,30,22,.45);backdrop-filter:blur(10px) saturate(140%)}
+nav.scrolled{padding:1rem 3rem;background:rgba(255,250,240,.94)}
+.nav-logo{text-decoration:none;position:relative;height:30px;width:auto;min-width:160px;display:inline-block;padding-bottom:6px}
+.nav-logo img.wm{position:absolute;top:0;left:0;height:30px;width:auto;transition:opacity .4s,filter .4s}
+.nav-logo img.em{display:none}
+.nav-logo img.wm.cream{opacity:1}
+.nav-logo img.wm.red{opacity:0}
+nav.scrolled .nav-logo img.wm.cream{opacity:0}
+nav.scrolled .nav-logo img.wm.red{opacity:1}
+.nav-logo::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--cream);transition:width .55s var(--ease-curtain)}
+.nav-logo:hover::after{width:100%}
+nav.scrolled .nav-logo::after{background:var(--brick)}
+.nav-logo:hover img.wm.cream{filter:brightness(1.15)}
+nav.scrolled .nav-logo:hover img.wm.red{filter:brightness(.78) saturate(1.15)}
+.nav-links{display:flex;gap:2.2rem;list-style:none}
+.nav-links a{font-family:'Kumbh Sans',sans-serif;font-weight:500;font-size:.7rem;letter-spacing:.32em;text-transform:uppercase;color:var(--ivory);text-decoration:none;position:relative;padding-bottom:3px}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--cream);transition:width .5s var(--ease-curtain)}
+.nav-links a:hover::after{width:100%}
+nav.scrolled .nav-links a{color:var(--ink)}
+nav.scrolled .nav-links a::after{background:var(--brick)}
+.nav-links a[aria-current="page"]{color:var(--cream)}
+nav.scrolled .nav-links a[aria-current="page"]{color:var(--brick)}
+
+/* Hamburger (mobile) */
+.nav-toggle{display:none;background:transparent;border:none;width:44px;height:44px;padding:10px;cursor:none}
+.nav-toggle span{display:block;width:24px;height:1.5px;background:var(--ivory);margin:5px auto;transition:transform .35s var(--ease-out),opacity .25s ease,background .35s ease}
+nav.scrolled .nav-toggle span,body.menu-open .nav-toggle span{background:var(--ink)}
+body.menu-open .nav-toggle span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+body.menu-open .nav-toggle span:nth-child(2){opacity:0}
+body.menu-open .nav-toggle span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.nav-scrim{display:none;position:fixed;inset:0;background:rgba(45,30,22,.55);z-index:999;opacity:0;transition:opacity .4s ease}
+body.menu-open .nav-scrim{display:block;opacity:1}
+
+/* ─── Footer ─── */
+footer{background:var(--ink);color:var(--ivory);padding:5rem 3rem 3rem}
+.foot-grid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:4rem;padding-bottom:4rem;border-bottom:1px solid rgba(255,250,240,.08)}
+.foot-wordmark .foot-lockup{height:120px;width:auto;margin-bottom:.4rem}
+.foot-wordmark .kannada{font-family:'Noto Sans Kannada',sans-serif;font-weight:300;font-size:1.3rem;color:var(--cream);display:block;margin-top:.2rem}
+.foot-wordmark p{margin-top:1.4rem;font-size:.88rem;line-height:1.7;color:rgba(255,250,240,.55);max-width:30ch}
+.foot-col h4{font-family:'Kumbh Sans',sans-serif;font-weight:500;font-size:.58rem;letter-spacing:.35em;text-transform:uppercase;color:var(--slate-sage);margin-bottom:1.4rem}
+.foot-col a{display:block;font-family:'Inter',sans-serif;font-weight:300;font-size:.92rem;color:rgba(255,250,240,.7);text-decoration:none;margin-bottom:.7rem}
+.foot-col a:hover{color:var(--ivory)}
+.foot-bottom{max-width:1320px;margin:3rem auto 0;display:flex;justify-content:space-between;font-family:'Kumbh Sans',sans-serif;font-weight:400;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,250,240,.35);flex-wrap:wrap;gap:1rem}
+
+/* ─── Responsive ─── */
+@media (max-width:900px){
+  section{padding:5rem 1.4rem}
+  nav{padding:1rem 1.2rem}
+  .nav-toggle{display:block}
+  .nav-links{position:fixed;top:0;right:0;bottom:0;height:100vh;height:100dvh;width:min(86vw,360px);background:var(--ivory);padding:6.5rem 2rem 2.4rem;flex-direction:column;align-items:flex-start;gap:1.4rem;transform:translateX(105%);transition:transform .55s var(--ease-curtain);z-index:1050;box-shadow:-30px 0 80px -20px rgba(0,0,0,.4);overflow-y:auto}
+  body.menu-open .nav-links{transform:translateX(0)}
+  .nav-links a{color:var(--ink);font-size:1.05rem;letter-spacing:.16em;padding:.6rem 0}
+  .v-hero{padding:7rem 1.4rem 4rem;min-height:auto}
+  .v-hero-content{grid-template-columns:1fr;gap:3rem}
+  .v-hero-side{justify-self:stretch;max-width:none}
+  .cases-head,.bring-grid,.begin-grid{grid-template-columns:1fr;gap:2.4rem}
+  .cases-grid{grid-template-columns:1fr;gap:1rem}
+  .case{aspect-ratio:16/10}
+  .process-grid{grid-template-columns:1fr 1fr;gap:1.4rem}
+  .bring-list{grid-template-columns:1fr}
+  .bring-list li{padding-top:1.4rem;border-top:1px solid var(--linen)!important}
+  .bring-list li:first-child{padding-top:0;border-top:none!important}
+  .v-form{padding:2rem 1.6rem}
+  .v-form-row{grid-template-columns:1fr;gap:1.4rem}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:2.4rem}
+}
+@media (max-width:600px){
+  .process-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<!-- ── NAV ── -->
+<nav id="navbar">
+  <a class="nav-logo" href="index.html" aria-label="studio nalmé · home">
+    <img class="wm red"   src="assets/logos/wordmark-red.svg" alt="studio nalmé">
+    <img class="wm cream" src="assets/logos/wordmark-cream.svg" alt="">
+  </a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <div class="nav-scrim"></div>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="store.html">Store</a></li>
+    <li><a href="ventures.html" aria-current="page">Ventures</a></li>
+    <li><a href="journal.html">Journal</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<!-- ── HERO ── -->
+<section class="v-hero">
+  <div class="v-hero-img"></div>
+  <div class="v-hero-veil"></div>
+  <div class="v-hero-content">
+    <div>
+      <div class="v-hero-eyebrow">For Landowners · Permaculture + Architecture</div>
+      <h1>Land into a living ecosystem.<br>Ecosystem into a place <b>that earns.</b></h1>
+      <p class="v-hero-sub">We use permaculture to turn whole parcels of land, half-acre to ten, into productive, self-sustaining ecosystems. Then we build the cafés, retreats, schools, or stays that let the place pay for itself, year after year. The land carries the work. The architecture brings the income.</p>
+      <div class="v-hero-cta">
+        <a href="#begin" class="btn btn-primary">Begin a venture conversation</a>
+        <a href="#process" class="btn btn-ghost-cream">How it works</a>
+      </div>
+    </div>
+    <aside class="v-hero-side">
+      <h4>How a venture is built</h4>
+      <p>Three layers, designed together. Never one without the others.</p>
+      <ul>
+        <li><b>The ecosystem.</b> Water, soil, food forest, microclimates.</li>
+        <li><b>The architecture.</b> Built in earth, lime, stone, local craft.</li>
+        <li><b>The earnings.</b> Hospitality, café, school, retreat, produce.</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<!-- ── USE CASES ── -->
+<section id="cases">
+  <div class="container">
+    <div class="cases-head">
+      <div>
+        <div class="eyebrow">What the land can become</div>
+        <h2 class="h2">A productive ecosystem, <br>and a venture <b>it earns from.</b></h2>
+      </div>
+      <p>These are the categories we know how to do well. Each one is designed as a living landscape first, with the architecture that lets it earn built into the same plan. If your idea is adjacent, write to us anyway.</p>
+    </div>
+
+    <div class="cases-grid">
+      <a class="case" href="#begin">
+        <div class="case-img" style="background-image:url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900&q=80')"></div>
+        <div class="case-veil"></div>
+        <div class="case-body">
+          <div class="case-tag">Hospitality</div>
+          <h3 class="case-name">A stay that the land hosts.</h3>
+          <p class="case-line">A small hotel or retreat of twelve rooms or fewer, sitting inside a food forest and water-harvested landscape. Guests pay for the place. The place feeds itself.</p>
+        </div>
+      </a>
+
+      <a class="case" href="#begin">
+        <div class="case-img" style="background-image:url('https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=900&q=80')"></div>
+        <div class="case-veil"></div>
+        <div class="case-body">
+          <div class="case-tag">Education</div>
+          <h3 class="case-name">A school that grows what it teaches.</h3>
+          <p class="case-line">A learning centre woven into a working farm. Children learn from the soil and the seasons. Tuition and harvest both contribute to the running of the place.</p>
+        </div>
+      </a>
+
+      <a class="case" href="#begin">
+        <div class="case-img" style="background-image:url('https://images.unsplash.com/photo-1545389336-cf090694435e?w=900&q=80')"></div>
+        <div class="case-veil"></div>
+        <div class="case-body">
+          <div class="case-tag">Wellness</div>
+          <h3 class="case-name">A retreat in a food forest.</h3>
+          <p class="case-line">Yoga, ayurveda, or healing programmes set in a regenerating landscape. Retreat fees, kitchen produce, and seasonal programmes all earning from the same acres.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROCESS ── -->
+<section id="process">
+  <div class="container">
+    <div class="process-head">
+      <div class="eyebrow">How it works</div>
+      <h2 class="h2">From bare land to a place <br>that <b>earns its keep.</b></h2>
+    </div>
+    <div class="process-grid">
+      <article class="process-step">
+        <span class="step-num">01</span>
+        <div class="step-name">Read the land</div>
+        <p class="step-desc">A long conversation, a slow walk, sometimes two visits. Water, soil, slope, sun, existing trees, neighbours, climate. Whatever the land has been doing without us, we want to understand it first.</p>
+      </article>
+      <article class="process-step">
+        <span class="step-num">02</span>
+        <div class="step-name">Design the ecosystem</div>
+        <p class="step-desc">A permaculture plan for the whole site: water harvesting, soil regeneration, planting strategy, food forest layout, microclimates. This is the foundation everything else sits in.</p>
+      </article>
+      <article class="process-step">
+        <span class="step-num">03</span>
+        <div class="step-name">Design the venture</div>
+        <p class="step-desc">The architecture itself: buildings, paths, edges, drawn into the ecosystem rather than on top of it. Alongside it, the financial structure of partnership: design fee, equity, operations, revenue model.</p>
+      </article>
+      <article class="process-step">
+        <span class="step-num">04</span>
+        <div class="step-name">Build &amp; plant</div>
+        <p class="step-desc">Construction in earth, lime, stone, cane, by the craftspeople we trust who live near the site. Planting and water work in parallel, so the land is already turning by the time the buildings are ready. Twelve to twenty months.</p>
+      </article>
+      <article class="process-step">
+        <span class="step-num">05</span>
+        <div class="step-name">Open &amp; tend</div>
+        <p class="step-desc">Opening day, and the slow tending that follows. We can stay involved with operations, brand, seasonal review, and ecosystem care, or step away cleanly once the place finds its rhythm.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHAT WE BRING ── -->
+<section id="bring">
+  <div class="container bring-grid">
+    <div>
+      <div class="eyebrow">What we bring</div>
+      <h2 class="h2">A studio that does both <b>halves.</b></h2>
+      <p style="margin-top:1.6rem;font-size:1rem;line-height:1.85;color:var(--charcoal);max-width:42ch">Most ventures get a permaculture consultant and an architect separately. The two halves rarely meet. Our founder trained under <a href="https://www.anna-heringer.com" target="_blank" rel="noopener noreferrer" style="color:var(--brick);text-decoration:none;border-bottom:1px solid rgba(142,52,50,.3)">Anna Heringer</a> at <a href="https://www.basehabitat.org" target="_blank" rel="noopener noreferrer" style="color:var(--brick);text-decoration:none;border-bottom:1px solid rgba(142,52,50,.3)">BASEhabitat</a> and as a permaculture practitioner, so the land design and the building design are drawn by the same hand, on the same desk.</p>
+    </div>
+    <ul class="bring-list">
+      <li><h4>Permaculture</h4><p>Water, soil, planting, microclimate. The land made productive before a wall goes up.</p></li>
+      <li><h4>Architecture</h4><p>Buildings drawn into the ecosystem. Earth, lime, stone, cane, reclaimed wood.</p></li>
+      <li><h4>Revenue model</h4><p>What the place will earn, how, and when. Built into the design from week one.</p></li>
+      <li><h4>Partnership</h4><p>Design fee, equity, operations. Sometimes co-invested with the <a href="https://www.linkedin.com/company/matash-ing/" target="_blank" rel="noopener noreferrer" style="color:var(--brick);text-decoration:none;border-bottom:1px solid rgba(142,52,50,.4)">Matash Enterprise Lab</a>. Structured around what works for the venture.</p></li>
+      <li><h4>Construction</h4><p>Site execution with the craftspeople we trust, who live near the site.</p></li>
+      <li><h4>Tending</h4><p>We can stay through opening and the first seasons: operations, ecosystem care, gentle iteration.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ── SEASONS — what the land's year asks for ── -->
+<section id="seasons">
+  <div class="seasons-container">
+
+    <div class="seasons-head">
+      <div>
+        <div class="eyebrow">When the work happens</div>
+        <h2 class="h2">The land sets the <b>schedule.</b></h2>
+      </div>
+      <p>Some parts of a venture wait for the rain. Others wait for it to stop. Earthworks belong to the dry months. Planting belongs to the wet. Buildings rise in the cool. Below is how the year tends to shape the work.</p>
+    </div>
+
+    <div class="seasons-table">
+      <div class="seasons-row head">
+        <div class="seasons-key">The work</div>
+        <div class="seasons-val">When the year allows</div>
+      </div>
+
+      <div class="seasons-row">
+        <div class="seasons-key">Reading the land<small>Site visit, soil and water observation</small></div>
+        <div class="seasons-val">Year-round</div>
+      </div>
+
+      <div class="seasons-row">
+        <div class="seasons-key">Designing the ecosystem<small>Permaculture plan, water and planting strategy</small></div>
+        <div class="seasons-val">Year-round</div>
+      </div>
+
+      <div class="seasons-row">
+        <div class="seasons-key">Designing the venture<small>Architecture, drawings, approvals, financial structure</small></div>
+        <div class="seasons-val">Year-round</div>
+      </div>
+
+      <div class="seasons-row">
+        <div class="seasons-key">Earthworks<small>Swales, bunds, ponds, contour shaping</small></div>
+        <div class="seasons-val">December–March <em>or pre-monsoon</em></div>
+      </div>
+
+      <div class="seasons-row">
+        <div class="seasons-key">Pit preparation for planting<small>Digging, mulching, soil-building</small></div>
+        <div class="seasons-val">September–June</div>
+      </div>
+
+      <div class="seasons-row">
+        <div class="seasons-key">Planting<small>Trees, shrubs, food forest layers</small></div>
+        <div class="seasons-val">May–August <em>or year-round if water is reliable</em></div>
+      </div>
+
+      <div class="seasons-row">
+        <div class="seasons-key">Building, in earth and lime<small>Walls, roofs, finishes</small></div>
+        <div class="seasons-val">November–May <em>dry months only</em></div>
+      </div>
+
+      <div class="seasons-row">
+        <div class="seasons-key">Lime curing and final coats<small>Outdoor work that needs to cure cleanly</small></div>
+        <div class="seasons-val">Avoid June–September</div>
+      </div>
+
+      <div class="seasons-row">
+        <div class="seasons-key">Walks and workshops on site<small>For the client, the team, sometimes the public</small></div>
+        <div class="seasons-val">Year-round</div>
+      </div>
+    </div>
+
+    <!-- Planning ahead — paired callout -->
+    <div class="planning">
+      <div class="planning-l">
+        <div class="eyebrow">Planning ahead</div>
+        <h3>Reach out <em>two or three months</em> before.</h3>
+      </div>
+      <div class="planning-r">
+        <p>If you'd like earthworks or planting to happen in a particular window, please write to us at least two or three months in advance. To break ground in <strong>March</strong>, the conversation should begin by <strong>December or January</strong>. The land sets the schedule; we work with what the year allows.</p>
+        <p><em>Design and implementation are two engagements.</em> Completing one with us doesn't automatically book the other — seasons, and the work already on the ground, decide when the next phase can begin. We'll always tell you what's realistic from the first call.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── SOCIAL PROOF ── -->
+<section id="proof">
+  <div class="proof-content">
+    <blockquote>"They walked the land for two days before they sketched a single wall. By the time the drawings came back, we understood why the swales had to go in before the foundation."</blockquote>
+    <cite>Landowner · Karnataka · Project under construction</cite>
+  </div>
+</section>
+
+<!-- ── FORM ── -->
+<section id="begin">
+  <div class="begin-grid">
+    <div class="begin-l">
+      <div class="eyebrow">Begin</div>
+      <h2 class="h2">Tell us about your <b>land.</b></h2>
+      <p>This is the start. We read every form, and write back within a week. The more you can tell us about the land itself — water, slope, what's growing — the better our first response will be.</p>
+      <p>If you'd rather skip the form, drop us a line at <a href="mailto:ventures@studionalme.com" style="color:var(--brick);text-decoration:none;border-bottom:1px solid rgba(142,52,50,.3)">ventures@studionalme.com</a> or on <a href="https://wa.me/919XXXXXXXXX" target="_blank" rel="noopener noreferrer" style="color:var(--brick);text-decoration:none;border-bottom:1px solid rgba(142,52,50,.3)">WhatsApp</a>.</p>
+      <div class="response">
+        <strong style="font-family:'Kumbh Sans';font-weight:500;letter-spacing:.2em;text-transform:uppercase;font-size:.65rem;color:var(--brick);display:block;margin-bottom:.6rem">First response</strong>
+        Within a week. If we think there's a fit, we'll suggest a call. If not, we'll tell you who we'd trust with it instead.
+      </div>
+    </div>
+
+    <form class="v-form" id="venturesForm" name="ventures" method="POST" onsubmit="handleVenturesSubmit(event)">
+      <input type="hidden" name="form-name" value="ventures">
+      <p class="hp-field" hidden aria-hidden="true"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
+      <h3>Venture Enquiry</h3>
+
+      <div class="v-form-row">
+        <div class="field"><label>Your name<span class="req">*</span></label><input type="text" name="name" required></div>
+        <div class="field"><label>Email<span class="req">*</span></label><input type="email" name="email" required></div>
+      </div>
+
+      <div class="v-form-row">
+        <div class="field"><label>Phone / WhatsApp</label><input type="tel" name="phone" placeholder="+91"></div>
+        <div class="field"><label>Best way to reach you</label><select name="contact_pref"><option>Email</option><option>WhatsApp</option><option>Phone call</option></select></div>
+      </div>
+
+      <div class="v-form-row">
+        <div class="field"><label>Where is the land?<span class="req">*</span></label><input type="text" name="location" placeholder="Town, district, state" required></div>
+        <div class="field"><label>Approximate size</label><input type="text" name="size" placeholder="acres or sq.ft"></div>
+      </div>
+
+      <div class="field">
+        <label>What's already on the land?</label>
+        <textarea name="land_condition" rows="2" placeholder="Water (well, borewell, stream, pond), slope, existing trees or planting, current use — whatever you know. Photos help; you can send them later by email."></textarea>
+      </div>
+
+      <div class="field">
+        <label>What are you imagining?<span class="req">*</span></label>
+        <div class="field-checks" id="kindChecks">
+          <label class="check-chip"><input type="checkbox" name="kind" value="hospitality">Hospitality</label>
+          <label class="check-chip"><input type="checkbox" name="kind" value="education">Education</label>
+          <label class="check-chip"><input type="checkbox" name="kind" value="wellness">Wellness</label>
+          <label class="check-chip"><input type="checkbox" name="kind" value="cafe">Café</label>
+          <label class="check-chip"><input type="checkbox" name="kind" value="other">Something else</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>A few sentences about the vision</label>
+        <textarea name="vision" rows="4" placeholder="What you're hoping the place will become — guests, students, atmosphere, anything that helps us start."></textarea>
+      </div>
+
+      <div class="field">
+        <label>Open to a partnership / JV structure?</label>
+        <div class="field-checks">
+          <label class="check-chip"><input type="radio" name="jv" value="yes">Yes</label>
+          <label class="check-chip"><input type="radio" name="jv" value="discuss">Want to discuss</label>
+          <label class="check-chip"><input type="radio" name="jv" value="no">No, design only</label>
+        </div>
+      </div>
+
+      <div class="field"><label>When would you like to start?</label><select name="timeline"><option>Within the next 3 months</option><option>3–6 months</option><option>6–12 months</option><option>Just exploring for now</option></select></div>
+
+      <!-- Hidden UTM capture fields — filled by JS from URL parameters -->
+      <input type="hidden" name="utm_source" id="utm_source">
+      <input type="hidden" name="utm_medium" id="utm_medium">
+      <input type="hidden" name="utm_campaign" id="utm_campaign">
+      <input type="hidden" name="referrer" id="referrer">
+      <input type="hidden" name="page" value="ventures">
+
+      <button class="btn btn-primary" type="submit">Send to the studio</button>
+    </form>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section id="faq">
+  <div class="container">
+    <div class="faq-head">
+      <div class="eyebrow">Useful to know</div>
+      <h2 class="h2">Things people <b>often ask.</b></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">What does it mean to turn land into a productive ecosystem?<span></span></button>
+        <div class="faq-a"><p>We use permaculture: water harvesting, soil-building, contour planting, food forests, microclimates. The land itself becomes productive: shade, soil, food, fodder, fibre, and a steady source of yield. Architecture is built into that system, not on top of it. The result is a place that quietly earns through what it produces <em>and</em> what it hosts.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How does the venture actually earn revenue?<span></span></button>
+        <div class="faq-a"><p>Through whatever the place naturally supports. A small hotel or retreat hosts paying guests. A café sells food grown on site. A school charges tuition and runs farm programmes. A wellness retreat sells stays and produce. The ecosystem reduces the running cost base; the architecture generates the income.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How long before the place starts to earn?<span></span></button>
+        <div class="faq-a"><p>Design and approvals: 3–6 months. Construction: 12–20 months. Once open, hospitality and café ventures begin earning immediately. Food forests and orchards take 2–3 seasons to yield meaningfully. Most ventures hit operational break-even between years two and four, depending on scale and category.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What if my land has no water, or poor soil?<span></span></button>
+        <div class="faq-a"><p>That's exactly where permaculture is the most useful. We design water harvesting and soil-building first: swales, contour planting, mulch, native species. The rest of the venture follows. A degraded site is often the most rewarding to work with, because the land changes visibly within the first year.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What kind of land projects do you take on?<span></span></button>
+        <div class="faq-a"><p>Anything between roughly half an acre and ten acres. Boutique hospitality (small hotels, retreats, cafés), small schools or learning centres, wellness and yoga spaces, working farms with a public face. We don't take on residential subdivisions or commercial high-rises — that's not what we do well.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Where do you work geographically?<span></span></button>
+        <div class="faq-a"><p>Primarily Karnataka and South India, with some projects in Maharashtra and Tamil Nadu. We can travel further for the right partnership.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How does a joint venture structure work?<span></span></button>
+        <div class="faq-a"><p>It's tailored each time. Sometimes we take a reduced design fee in exchange for equity. Sometimes we co-invest the design phase alongside the <a href="https://www.linkedin.com/company/matash-ing/" target="_blank" rel="noopener noreferrer" style="color:var(--brick);text-decoration:none;border-bottom:1px solid rgba(142,52,50,.4);font-weight:500">Matash Enterprise Lab</a>. Sometimes we operate the venture after opening and share revenue. We're transparent about what we can put in and what we'd want in return. The first conversation costs you nothing.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do I need to have a clear idea of what I want to build?<span></span></button>
+        <div class="faq-a"><p>No. Many of our best ventures started with a landowner who only knew they wanted the land to do something. We help shape what the land can support — ecologically <em>and</em> financially — including the revenue model.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What's your typical budget range?<span></span></button>
+        <div class="faq-a"><p>Built area cost ranges from ₹2,500 to ₹4,500 per square foot for the buildings we make, depending on materials, finish, and remoteness. Land development, infrastructure, and furnishing are extra. We'll share a real budget after the first site visit.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can I see your other ventures before deciding?<span></span></button>
+        <div class="faq-a"><p>Yes. Our completed and ongoing work is on the <a href="work.html" style="color:var(--brick);text-decoration:none;border-bottom:1px solid rgba(142,52,50,.3)">Work page</a>. The studio's process lives on <a href="https://www.instagram.com/studio_nalme/" target="_blank" rel="noopener noreferrer" style="color:var(--brick);text-decoration:none;border-bottom:1px solid rgba(142,52,50,.3)">Instagram</a>. Once we're talking, we'll arrange a visit to a built project nearby.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CLOSING ── -->
+<section id="closing">
+  <div class="closing-content">
+    <h3>Land that earns its keep is not a metaphor. It's a design problem, and we know how to solve it.</h3>
+    <p>Begin with what you know about the land. We'll handle the rest.</p>
+    <a href="#begin" class="btn btn-primary" style="background:var(--ivory);color:var(--brick);border-color:var(--ivory)">Start the conversation</a>
+    <a class="ig" href="https://www.instagram.com/studio_nalme/" target="_blank" rel="noopener noreferrer">@studio_nalme on Instagram ↗</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="foot-grid">
+    <div>
+      <div class="foot-wordmark">
+        <img class="foot-lockup" src="assets/logos/logo-primary-cream.svg" alt="studio nalmé">
+        <span class="kannada">ಸ್ಟುಡಿಯೋ ನಲ್ಮೆ</span>
+      </div>
+      <p> We build with love, by hand, toward belonging.</p>
+    </div>
+    <div class="foot-col"><h4>Visit</h4><a href="about.html">About</a><a href="work.html">Work</a><a href="store.html">Store</a><a href="ventures.html">Ventures</a><a href="journal.html">Journal</a><a href="index.html#contact">Contact</a></div>
+    <div class="foot-col"><h4>Practice</h4><a href="work.html">Architecture</a><a href="work.html">Interiors</a><a href="store.html">Store</a><a href="workshops.html">Workshops</a></div>
+    <div class="foot-col"><h4>Elsewhere</h4><a href="https://www.instagram.com/studio_nalme/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="journal.html">Field Notes</a><a href="https://wa.me/919XXXXXXXXX" target="_blank" rel="noopener noreferrer">WhatsApp</a></div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 Studio Nalmé · All rights reserved</span>
+    <span>By hand, in Bengaluru</span>
+  </div>
+</footer>
+
+<script>
+// ─── Cursor
+const cursor=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
+if(cursor && ring){
+  let mx=window.innerWidth/2,my=window.innerHeight/2,rx=mx,ry=my;
+  document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cursor.style.left=mx+'px';cursor.style.top=my+'px'});
+  (function r(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(r)})();
+  document.querySelectorAll('a,button,input,textarea,select,.check-chip').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{cursor.classList.add('hover');ring.classList.add('hover')});
+    el.addEventListener('mouseleave',()=>{cursor.classList.remove('hover');ring.classList.remove('hover')});
+  });
+}
+
+// ─── Nav scrolled state
+const navbar=document.getElementById('navbar');
+window.addEventListener('scroll',()=>navbar.classList.toggle('scrolled',window.scrollY>60),{passive:true});
+
+// ─── Hamburger
+const navToggle=document.querySelector('.nav-toggle');
+const navScrim=document.querySelector('.nav-scrim');
+function closeMenu(){document.body.classList.remove('menu-open');if(navToggle)navToggle.setAttribute('aria-expanded','false')}
+if(navToggle){
+  navToggle.addEventListener('click',()=>{const o=document.body.classList.toggle('menu-open');navToggle.setAttribute('aria-expanded',o?'true':'false')});
+  document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',closeMenu));
+}
+if(navScrim) navScrim.addEventListener('click',closeMenu);
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
+
+// ─── FAQ accordion
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>q.closest('.faq-item').classList.toggle('open'));
+});
+
+// ─── Check-chip toggle (visual state for checkboxes/radios inside chips)
+document.querySelectorAll('.check-chip').forEach(chip=>{
+  const input=chip.querySelector('input');
+  chip.addEventListener('click',e=>{
+    if(e.target.tagName==='INPUT') return; // native click already handled
+    e.preventDefault();
+    input.click();
+  });
+  input.addEventListener('change',()=>{
+    if(input.type==='radio'){
+      // un-check siblings in same name group
+      document.querySelectorAll(`input[name="${input.name}"]`).forEach(r=>r.closest('.check-chip').classList.toggle('checked',r.checked));
+    } else {
+      chip.classList.toggle('checked',input.checked);
+    }
+  });
+});
+
+// ─── UTM capture — pull source/medium/campaign from URL params for analytics
+(function captureUtms(){
+  const params=new URLSearchParams(window.location.search);
+  ['utm_source','utm_medium','utm_campaign'].forEach(k=>{
+    const v=params.get(k);
+    const el=document.getElementById(k);
+    if(el && v) el.value=v;
+  });
+  const ref=document.getElementById('referrer');
+  if(ref) ref.value=document.referrer || 'direct';
+})();
+
+// ─── Netlify Forms — AJAX submit so the page never reloads, then reveal thank-you
+function handleVenturesSubmit(e){
+  e.preventDefault();
+  const form=e.target;
+  const data=new FormData(form);
+  // URL-encode for Netlify's static form handler
+  const body=new URLSearchParams();
+  for(const [k,v] of data.entries()){ body.append(k,v); }
+  fetch('/api/submit', {
+    method:'POST',
+    headers:{'Content-Type':'application/x-www-form-urlencoded'},
+    body:body.toString()
+  })
+  .then(r=>{
+    if(r.ok){ form.classList.add('sent'); }
+    else { alert('Sorry — that didn’t send. Email us at ventures@studionalme.com and we’ll pick it up directly.'); }
+  })
+  .catch(()=>{ alert('Sorry — that didn’t send. Email us at ventures@studionalme.com and we’ll pick it up directly.'); });
+}
+</script>
+</body>
+</html>

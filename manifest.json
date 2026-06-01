@@ -1,0 +1,13 @@
+{
+  "name": "Studio Nalmé",
+  "short_name": "Nalmé",
+  "description": "A Bengaluru practice working at the intersection of permaculture and earth architecture.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffaf0",
+  "theme_color": "#8e3432",
+  "icons": [
+    { "src": "/assets/logos/favicon-red.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/assets/logos/favicon-cream.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "monochrome" }
+  ]
+}

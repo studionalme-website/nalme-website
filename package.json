@@ -1,0 +1,17 @@
+{
+  "name": "studio-nalme",
+  "version": "1.0.0",
+  "description": "Studio Nalmé — earth architecture practice in Bengaluru.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch:instagram": "node scripts/fetch-instagram.js",
+    "build:indexes": "node scripts/build-indexes.js",
+    "build": "npm run fetch:instagram && npm run build:indexes && echo '✓ Static site ready'"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Studio Nalmé",
+  "license": "UNLICENSED"
+}

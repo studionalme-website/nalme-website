@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank you — Studio Nalmé</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Thank you for your order from Studio Nalmé. We'll write within 24 hours with a dispatch estimate.">
+<link rel="icon" type="image/svg+xml" href="assets/logos/favicon-cream.svg" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="assets/logos/favicon-red.svg">
+<link rel="preload" href="assets/logos/logo-primary-red.svg" as="image" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+<style>
+/* ─── BRAND TYPEFACES (inlined for self-contained delivery) ─── */
+@font-face{font-family:'Friend';src:url('assets/fonts/Friend-Light.otf') format('opentype');font-weight:300;font-display:swap}
+@font-face{font-family:'Friend';src:url('assets/fonts/Friend-Regular.otf') format('opentype');font-weight:400;font-display:swap}
+@font-face{font-family:'Friend';src:url('assets/fonts/Friend-Bold.otf') format('opentype');font-weight:700;font-display:swap}
+@font-face{font-family:'Friend';src:url('assets/fonts/Friend-Italic.otf') format('opentype');font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:'Kumbh Sans';src:url('assets/fonts/KumbhSans.ttf') format('truetype');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Inter';src:url('assets/fonts/Inter.ttf') format('truetype');font-weight:100 900;font-display:swap}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+:root{
+  --ivory:#fffaf0;--brick:#8e3432;--sage:#6b705c;--taupe:#957465;--charcoal:#665146;
+  --ink:#3d3a36;--bone:#eae7e5;--linen:#d9d2c5;--cream:#eedbbb;
+  --ease-out:cubic-bezier(.25,.46,.45,.94);
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{background:var(--ivory);color:var(--charcoal);font-family:'Inter','Helvetica Neue',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden;cursor:none;-webkit-font-smoothing:antialiased}
+
+/* ─── CURSOR ─── */
+.cursor{position:fixed;width:10px;height:10px;background:var(--brick);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform .15s ease;mix-blend-mode:multiply;left:-100px;top:-100px}
+.cursor-ring{position:fixed;width:36px;height:36px;border:1px solid var(--charcoal);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .3s ease,height .3s ease,opacity .3s ease;opacity:.4;left:-100px;top:-100px}
+@media (hover:none){body{cursor:auto}.cursor,.cursor-ring{display:none}}
+
+/* ─── NAV ─── */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1.4rem 3rem;display:flex;justify-content:space-between;align-items:center;background:rgba(255,250,240,.92);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid rgba(102,81,70,.06);transition:padding .35s ease}
+.nav-logo{display:inline-flex;align-items:center;text-decoration:none}
+.nav-logo img{height:28px;width:auto;display:block}
+.nav-links{display:flex;align-items:center;gap:2.4rem;list-style:none}
+.nav-links a{font-family:'Kumbh Sans',sans-serif;font-weight:500;font-size:.7rem;letter-spacing:.32em;text-transform:uppercase;color:var(--ink);text-decoration:none;transition:color .4s ease}
+.nav-links a:hover{color:var(--brick)}
+
+/* ─── THANK-YOU CARD ─── */
+main{padding-top:7rem;min-height:calc(100vh - 7rem);display:flex;align-items:center;justify-content:center}
+.thanks{max-width:720px;margin:0 auto;padding:4rem 3rem 6rem;text-align:center}
+.thanks-mark{width:84px;height:auto;display:block;margin:0 auto 2.4rem;opacity:.9}
+.eyebrow{font-family:'Kumbh Sans',sans-serif;font-weight:500;font-size:.62rem;letter-spacing:.5em;text-transform:uppercase;color:var(--sage);display:flex;align-items:center;justify-content:center;gap:1rem;margin-bottom:1.8rem}
+.eyebrow::before,.eyebrow::after{content:'';width:32px;height:1px;background:var(--sage);opacity:.5}
+.thanks h1{font-family:'Kumbh Sans',sans-serif;font-weight:200;font-size:clamp(2rem,4vw,2.8rem);line-height:1.18;letter-spacing:-.02em;color:var(--ink);margin-bottom:1.4rem;max-width:22ch;margin-left:auto;margin-right:auto}
+.thanks h1 em{font-style:normal;color:var(--brick);font-family:'Friend',sans-serif;font-weight:400}
+.thanks-sub{font-family:'Friend',sans-serif;font-style:italic;font-size:1.15rem;line-height:1.55;color:var(--taupe);max-width:36ch;margin:0 auto 3rem}
+
+.thanks-rec{background:var(--bone);border:1px solid var(--linen);padding:2rem 2.4rem;margin:0 auto 3rem;max-width:520px;display:grid;grid-template-columns:1fr;gap:1.2rem;text-align:left}
+.thanks-row{display:flex;justify-content:space-between;align-items:baseline;gap:1.6rem;padding-bottom:1rem;border-bottom:1px solid var(--linen)}
+.thanks-row:last-child{border-bottom:none;padding-bottom:0}
+.thanks-label{font-family:'Kumbh Sans',sans-serif;font-weight:500;font-size:.58rem;letter-spacing:.32em;text-transform:uppercase;color:var(--taupe);flex-shrink:0}
+.thanks-val{font-family:'Kumbh Sans',sans-serif;font-weight:400;font-size:.95rem;color:var(--ink);text-align:right;word-break:break-all}
+.thanks-val.brick{color:var(--brick);font-family:'Friend',sans-serif;font-style:italic;font-size:1.05rem}
+
+.thanks-cta{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-bottom:3rem}
+.btn{display:inline-flex;align-items:center;gap:.8rem;padding:.95rem 1.8rem;font-family:'Kumbh Sans',sans-serif;font-weight:500;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;text-decoration:none;border:1px solid;cursor:none;transition:background .5s,color .5s,border-color .5s}
+.btn-primary{background:var(--brick);color:var(--ivory);border-color:var(--brick)}
+.btn-primary:hover{background:var(--ink);border-color:var(--ink)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:rgba(102,81,70,.3)}
+.btn-ghost:hover{border-color:var(--ink)}
+
+.thanks-foot{margin-top:3.2rem;padding-top:2.4rem;border-top:1px solid var(--linen);font-family:'Friend',sans-serif;font-style:italic;font-size:1rem;color:var(--taupe);max-width:46ch;margin-left:auto;margin-right:auto}
+.thanks-foot a{color:var(--brick);text-decoration:none;border-bottom:1px solid rgba(142,52,50,.3);transition:border-color .3s}
+.thanks-foot a:hover{border-color:var(--brick)}
+
+footer{background:var(--ink);color:rgba(255,250,240,.55);padding:3rem;text-align:center;font-family:'Kumbh Sans',sans-serif;font-weight:400;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase}
+
+@media (max-width:700px){
+  nav{padding:1rem 1.4rem}
+  .nav-links{display:none}
+  .thanks{padding:3rem 1.4rem 4rem}
+  .thanks-rec{padding:1.6rem 1.4rem}
+  .thanks-row{flex-direction:column;align-items:flex-start;gap:.3rem}
+  .thanks-val{text-align:left}
+  .thanks-cta{flex-direction:column;align-items:center}
+  .thanks-cta .btn{width:100%;justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<nav>
+  <a class="nav-logo" href="index.html" aria-label="studio nalmé · home">
+    <img src="assets/logos/wordmark-red.svg" alt="studio nalmé">
+  </a>
+  <ul class="nav-links">
+    <li><a href="store.html">Store</a></li>
+    <li><a href="index.html">Home</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="thanks">
+    <img class="thanks-mark" src="assets/logos/secondary-emblem-red.svg" alt="">
+    <div class="eyebrow">Thank you</div>
+    <h1>The piece will be made for you, <em>then sent.</em></h1>
+    <p class="thanks-sub">We'll write within 24 hours with a dispatch estimate.</p>
+
+    <div class="thanks-rec" id="thanks-rec">
+      <!-- populated by JS from URL params -->
+    </div>
+
+    <div class="thanks-cta">
+      <a href="store.html" class="btn btn-primary">Back to the store</a>
+      <a href="index.html" class="btn btn-ghost">Studio home</a>
+    </div>
+
+    <p class="thanks-foot">While you wait, we keep notes on Instagram — <a href="https://www.instagram.com/studio_nalme/" target="_blank" rel="noopener noreferrer">@studio_nalme</a>. Or write to us anytime at <a href="mailto:hello@studionalme.com">hello@studionalme.com</a>.</p>
+  </section>
+</main>
+
+<footer>© 2026 Studio Nalmé · Bengaluru</footer>
+
+<script>
+// ─── Cursor (mirrors the rest of the site)
+(function(){
+  const dot = document.getElementById('cursor');
+  const ring = document.getElementById('cursor-ring');
+  let mx=0, my=0, rx=0, ry=0;
+  document.addEventListener('mousemove', e=>{ mx=e.clientX; my=e.clientY; dot.style.left=mx+'px'; dot.style.top=my+'px'; });
+  (function loop(){ rx += (mx-rx)*.12; ry += (my-ry)*.12; ring.style.left=rx+'px'; ring.style.top=ry+'px'; requestAnimationFrame(loop); })();
+})();
+
+// ─── Read URL params from Razorpay handler redirect, render the receipt
+(function renderReceipt(){
+  const params = new URLSearchParams(location.search);
+  const pid = params.get('pid');
+  const product = params.get('p');
+  const rec = document.getElementById('thanks-rec');
+  if(!pid && !product){
+    rec.style.display = 'none';
+    return;
+  }
+  const rows = [];
+  if(product) rows.push(`<div class="thanks-row"><span class="thanks-label">Piece</span><span class="thanks-val brick">${escapeHtml(product)}</span></div>`);
+  if(pid)     rows.push(`<div class="thanks-row"><span class="thanks-label">Payment ID</span><span class="thanks-val">${escapeHtml(pid)}</span></div>`);
+  rows.push(`<div class="thanks-row"><span class="thanks-label">Status</span><span class="thanks-val brick">Received</span></div>`);
+  rec.innerHTML = rows.join('');
+})();
+function escapeHtml(s){ return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+</script>
+
+</body>
+</html>
