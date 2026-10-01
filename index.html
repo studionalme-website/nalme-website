@@ -1044,8 +1044,19 @@ function handleNalmeForm(e){
 // If the file is missing or fails to load, the .loaded class never fires and the
 // fallback (clay-reveal stills for hero / pure brick for credo) renders as designed.
 document.querySelectorAll('.hero-video, .credo-video').forEach(v => {
-  v.addEventListener('loadeddata', () => v.classList.add('loaded'));
+  const show = () => v.classList.add('loaded');
+  // The <video> has preload="auto" and sits near the top of the page, while this
+  // script runs at the end of <body>. On a cached load the video can reach
+  // HAVE_CURRENT_DATA before the listener below is attached, so 'loadeddata'
+  // never fires and the video stays at opacity:0 behind a frozen still.
+  // Check readyState up front as well as listening.
+  if (v.readyState >= 2) show();
+  v.addEventListener('loadeddata', show);
   v.addEventListener('error', () => v.remove());
+  // Nudge playback in case autoplay did not start on its own. Muted + playsinline
+  // means this is allowed; if a browser still refuses, swallow the rejection.
+  const p = v.play();
+  if (p && typeof p.catch === 'function') p.catch(() => {});
 });
 </script>
 </body>
