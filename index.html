@@ -346,6 +346,13 @@ section{padding:9rem 3rem;position:relative}
 }
 .proj-half{grid-column:span 7}
 .proj-third{grid-column:span 4}
+/* Half-row tile. Added so two tiles of equal size can share one row: the
+   existing 7-column tile is too wide for a pair, and 4 is too narrow. */
+.proj-wide{grid-column:span 6}
+/* Full-bleed tile. Used for a single panoramic image so it runs the whole
+   width uncropped; 16/9 here keeps its real shape instead of the 4/3 crop. */
+.proj-full{grid-column:span 12}
+.proj-full .proj-img{aspect-ratio:16/9}
 .work-foot{margin-top:4.5rem;text-align:center;padding-top:3rem;border-top:1px solid var(--linen)}
 .work-foot a{font-family:'Kumbh Sans',sans-serif;font-weight:500;font-size:.72rem;letter-spacing:.35em;text-transform:uppercase;color:var(--brick);text-decoration:none;display:inline-flex;align-items:center;gap:1rem;padding-bottom:.4rem;border-bottom:1px solid rgba(142,52,50,.3);transition:gap .4s ease,border-color .4s ease}
 .work-foot a:hover{gap:1.4rem;border-color:var(--brick)}
@@ -518,7 +525,7 @@ footer{background:var(--ink);color:var(--ivory);padding:5rem 3rem 3rem}
   .venture-teaser-r{aspect-ratio:4/3}
   .practice-l{position:static}
   .work-grid{grid-template-columns:1fr;gap:1rem}
-  .proj-large,.proj-tall,.proj-half,.proj-third{grid-column:span 1;grid-row:auto}
+  .proj-large,.proj-tall,.proj-half,.proj-third,.proj-wide,.proj-full{grid-column:span 1;grid-row:auto}
   .proj-tall .proj-img{aspect-ratio:4/3;height:auto}
   .light-grid{grid-template-columns:1fr;gap:2.4rem}
   .notes-grid{grid-template-columns:1fr}
@@ -562,7 +569,11 @@ body.menu-open .nav-scrim{display:block;opacity:1}
 
 /* ─── TOUCH-FRIENDLY: project tiles + light cards show meta by default ─── */
 @media (hover:none){
-  .proj-overlay{background:rgba(143,170,165,.72)}
+  /* Leftover from the old design, where the caption sat ON TOP of the image and
+     this slate-sage wash made it readable. The caption now sits BELOW the image,
+     so on touch devices that wash became a green band behind the project name.
+     Transparent here matches the desktop caption exactly. */
+  .proj-overlay{background:transparent}
   .proj-overlay-inner{opacity:1;transform:translateY(0)}
   /* Larger tap targets */
   .btn{min-height:48px;padding:1rem 1.8rem}
@@ -687,6 +698,14 @@ body.menu-open .nav-scrim{display:block;opacity:1}
         </div></div>
       </a>
 
+      <a class="proj proj-full reveal delay-2" href="#">
+        <img class="proj-img" src="assets/images/projects/ratnagiri-farmhouse.webp" alt="Ratnagiri Farmhouse — a single-storey house of rubble stone walls and planted roof terraces, lit at dusk above a lotus pond">
+        <div class="proj-overlay"><div class="proj-overlay-inner">
+          <div class="proj-title">Ratnagiri Farmhouse<small>Masons Ink, architects &middot; Nalm&eacute; consultant &middot; Completed</small></div>
+          <span class="proj-tag">Residence</span>
+        </div></div>
+      </a>
+
       <a class="proj proj-third reveal delay-2" href="#">
         <img class="proj-img" src="assets/images/projects/mysore-milk-bar.webp" alt="Mysore Milk Bar — a proposed caf&eacute; interior with patterned tile, cane seating and warm afternoon light">
         <div class="proj-overlay"><div class="proj-overlay-inner">
@@ -711,18 +730,18 @@ body.menu-open .nav-scrim{display:block;opacity:1}
         </div></div>
       </a>
 
-      <a class="proj proj-large reveal delay-3" href="#">
-        <img class="proj-img" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80" alt="">
+      <a class="proj proj-wide reveal delay-3" href="#">
+        <img class="proj-img" src="assets/images/projects/wild-pour.webp" alt="Wild Pour — an evening courtyard of terrace seating and globe lights beneath a shaded upper deck">
         <div class="proj-overlay"><div class="proj-overlay-inner">
-          <div class="proj-title">Wild Pour<small>Proposal</small></div>
+          <div class="proj-title">Wild Pour<small>In collaboration &middot; Completed</small></div>
           <span class="proj-tag">Caf&eacute; &middot; Hospitality</span>
         </div></div>
       </a>
 
-      <a class="proj proj-third reveal delay-3" href="#">
-        <img class="proj-img" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80" alt="">
+      <a class="proj proj-wide reveal delay-3" href="#">
+        <img class="proj-img" src="assets/images/projects/amara.webp" alt="Amara — a landscaped arrival court with petal canopies and a water feature at dusk">
         <div class="proj-overlay"><div class="proj-overlay-inner">
-          <div class="proj-title">Amara<small>Plotted development &middot; Proposal</small></div>
+          <div class="proj-title">Amara<small>for SJR Developers &middot; Proposal</small></div>
           <span class="proj-tag">Land Development</span>
         </div></div>
       </a>
