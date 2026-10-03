@@ -335,6 +335,15 @@ section{padding:9rem 3rem;position:relative}
 .proj-large{grid-column:span 7}
 .proj-tall{grid-column:span 5;grid-row:span 2}
 .proj-tall .proj-img{aspect-ratio:4/5;height:100%}
+/* The tall tile's image was set to height:100%, so it filled the whole tile and
+   pushed its caption past the bottom edge, where .proj{overflow:hidden} clipped it.
+   Anjanadri showed no name, location or tag on desktop. Letting the image flex to
+   fill only the space ABOVE the caption fixes it. Desktop only; below 900px the
+   existing mobile rules already handle this tile. */
+@media (min-width:901px){
+  .proj-tall{display:flex;flex-direction:column}
+  .proj-tall .proj-img{flex:1 1 auto;height:auto;min-height:0;aspect-ratio:auto}
+}
 .proj-half{grid-column:span 7}
 .proj-third{grid-column:span 4}
 .work-foot{margin-top:4.5rem;text-align:center;padding-top:3rem;border-top:1px solid var(--linen)}
